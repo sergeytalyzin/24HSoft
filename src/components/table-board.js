@@ -55,7 +55,6 @@ const blackList = JSON.parse(window.localStorage.getItem(`boardList`))||[];
 }
 
 const createBoardTemplate = (data) => {
- console.log(`aaaa`,data)
   return (
     `<table class="table-content">
         <thead>
