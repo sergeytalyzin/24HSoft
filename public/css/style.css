@@ -1,0 +1,52 @@
+.airport {
+  width: 1100px;
+  background-color: #e8e8e8;
+  font-size: 14px;
+  margin: 23px auto;
+  min-height: 600px;
+  top: 10px;
+  border-radius: 5px;
+  padding: 15px;
+  -webkit-box-shadow: 0 2px 8px 0 black;
+  -moz-box-shadow: 0 2px 8px 0 black;
+  box-shadow: 0 2px 8px 0 black;
+}
+.row {
+  border-bottom: 15px solid #e8e8e8;
+}
+.row td {
+  padding:10px;
+  background: #F7FADB;
+  height: 20px;
+}
+.table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  border-spacing: 2px;
+  border-color: grey;
+
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+th {
+  background: #e8e8e8;
+  text-align: center;
+}
+.th__title {
+  font-size: 12pt;
+}
+.table-content {
+  margin: 1em 0;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.row--active {
+  opacity: 0.2;
+}
