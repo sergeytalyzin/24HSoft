@@ -125,8 +125,6 @@ export default class TableBoard extends AbstractComponent {
   handlerDistance () {
     document.querySelector(`.distance`).addEventListener(`click`,()=>{
        const arr = [...document.querySelectorAll(`tbody tr`)].reverse()
-      // document.querySelector(`tbody`).innerHTML = arr.join(' ')
-      // console.log(arr)
     document.querySelector(`tbody`).innerHTML = "";
        arr.forEach(it=>{
          document.querySelector(`tbody`).append(it)
