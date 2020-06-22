@@ -29,7 +29,7 @@ const blackList = JSON.parse(window.localStorage.getItem(`boardList`))||[];
   })
   return data.map((item)=>{
     return (`
-        <tr data-number = "${item[7]}" class="row${blackList.includes(item[7]) ? ` row--active`:``}">
+        <tr data-number = "${item[6]}" class="row${blackList.includes(item[6]) ? ` row--active`:``}">
             <td >
                 ${item[11]&&item[12] ? (`${item[11]} --> ${item[12]}`): `AWAIT`}
             </td>
@@ -110,7 +110,7 @@ export default class TableBoard extends AbstractComponent {
        evt.currentTarget.classList.toggle(`row--active`)
 
       if(blackList && blackList.includes(it.dataset.number)) {
-        blackList =  blackList.filter(el=>{
+        blackList = blackList.filter(el=>{
           return el!==it.dataset.number
         })
       } else {
